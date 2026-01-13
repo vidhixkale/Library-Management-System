@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>added</title>
+<style>
+    .heading1{
+        font-size: larger;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        justify-content:center;
+        allign-items:center;
+        height:100
+        margin:0 auto;
+        text-align:center;
+    }
+    #add-button {
+        background-color: green;
+        color: white;
+        margin:0 auto;
+        text-align:center;
+    }
+    .button-container {
+            
+        position: fixed;
+        justify-content: space-around;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body style="background: url(https://i.pinimg.com/736x/67/16/ec/6716ecb2779f7a8defb7c862ad519064.jpg); background-repeat: no-repeat; background-size: cover;">
+    <h1 class="heading1">Hello User</h1>
+    <h2 th:text="${Message}" class="heading1">Message</h2>
+    <div class="button-Container">
+        <button id="add-button" onclick="window.location.href='/'">Home</button>
+    </div>
+</body>
+</html>

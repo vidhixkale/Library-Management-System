@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Displayed Search Book</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            width:100%;
+            margin:0 auto;
+            border:1px solid white;
+        }
+        th,td{
+            border:1px solid white;
+            padding:8px;
+            text-allign:left;
+        }
+
+        td,th{
+            color:white;
+        }
+    </style>
+</head>
+<body style="background: url(https://i.pinimg.com/736x/67/16/ec/6716ecb2779f7a8defb7c862ad519064.jpg); background-repeat: no-repeat; background-size: cover;">
+    <h1 style="color:white;margin:0 auto;font-size:larger">Book Found</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>BookID</th>
+                <th>BookName</th>
+                <th>AuthorName</th>
+                <th>IssuedDate</th>
+                <th>ReturnDate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="book : ${books}">
+                <td th:text="${book.bookid}"></td><br/>
+                <td th:text="${book.BookName}"></td><br/>
+                <td th:text="${book.AuthorName}"></td><br/>
+                <td th:text="${book.IssuedDate}"></td><br/>
+                <td th:text="${book.ReturnDate}"></td><br/>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

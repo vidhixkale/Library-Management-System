@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Information Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width:100%;
+            height: 100%;
+        }
+        .add-button {
+            background-color: green;
+            /*color: white;
+            display: block;
+            position: fixed;
+            justify-content: space-around;
+            width: 10%;
+            text-align: center;
+            padding: 10px;*/
+        
+            color: aliceblue;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: solid;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            
+        }
+        .formStyle{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: azure;
+            columns:3;
+            font-size: larger;
+            text-align: center;
+            padding: 20;
+            border: 5;
+            color: #dcc1e5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin-top: 10%;
+            margin-left: 20%;
+            width:1000px ;
+        }
+    </style>
+</head>
+<body style="background: url(https://i.pinimg.com/736x/67/16/ec/6716ecb2779f7a8defb7c862ad519064.jpg); background-repeat: no-repeat; background-size: cover;">
+    <form class="formStyle" action="added" method="post">
+
+        <label for="BookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName"><br><br>
+
+        <label for="AuthorName">Author Name:</label>
+        <input type="text" id="authorName" name="authorName"><br><br>
+
+        <label for="IssueDate">IssueDate:</label>
+        <input type="date" name="IssueDate"><br><br>
+
+        <label for="ReturnDate">ReturnDate:</label>
+        <input type="date"  name="ReturnDate"><br><br>
+
+        <div class="button-container">
+            <button type="submit" class="add-button">Add</button>
+        </div>
+    </form>
+</body>
+</html>

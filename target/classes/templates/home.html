@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>home</title>
+    <style>
+        .button-container {
+            position: fixed;
+            justify-content: space-around;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .add-button {
+            background-color: green;
+            color: white;
+        }
+        
+        .remove-button {
+            background-color: red;
+            color: white;
+        }
+        
+        .search-button {
+            background-color: blue;
+            color: white;
+        }
+        
+        .issue-button {
+            background-color: orange;
+            color: white;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            width:100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="add-button" onclick="window.location.href='/addbook'">Add</button>
+        <button class="remove-button" onclick="window.location.href='/remove'"> Remove</button>
+        <button class="search-button" onclick="window.location.href='/searchBook'">Search</button>
+        <button class="issue-button" onclick="window.location.href='/displayall'">Issue</button>
+    </div>
+    <img src="https://i.pinimg.com/736x/67/16/ec/6716ecb2779f7a8defb7c862ad519064.jpg" alt="Image Description">
+</body>
+</html>
